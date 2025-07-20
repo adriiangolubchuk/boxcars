@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>BOXCARS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <a href="/" class="header__logo">
+                   <img src="/src/img/logo.svg" alt="BOXCARS"> 
+                </a>
+
+                <div class="header__desktop-menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="#">Главная<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+                        <li class="header__menu-item"><a href="#">Листинг<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+                        <li class="header__menu-item"><a href="#">Блог<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+                        <li class="header__menu-item"><a href="#">Страницы<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+                        <li class="header__menu-item"><a href="#">О нас</a></li>
+                        <li class="header__menu-item"><a href="#">Контакты</a></li>
+                    </ul>
+
+                    <div class="header__auth">
+                        <a href="#" class="header__auth-login"><span class="material-symbols-outlined">person</span>Войти</a>
+                        <a href="#" class="header__submit-btn button">Отправить объявление</a>
+                    </div>
+                </div>
+
+                <button class="header__mobile-toggle" aria-label="Открыть меню" aria-expanded="false">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </nav>
+        </div>
+
+        <section class="header__main">
+            <div class="header__container">
+                <p>Найдите автомобили на продажу и в аренду рядом с вами</p>
+                <h1>НАЙДИ СВОЙ ИДЕАЛЬНЫЙ АВТОМОБИЛЬ</h1>
+                <div class="header__tabs">
+                    <a href="#" class="active">Все</a>
+                    <a href="#">Новинки</a>
+                    <a href="#">Использованные</a>
+                </div>
+                <div class="header__search-form">
+                    <div class="form-group">
+                        <a href="#">Любые марки <span class="material-symbols-outlined">arrow_drop_down</span></a>
+                    </div>
+                    <div class="form-group">
+                        <a href="#">Любые модели <span class="material-symbols-outlined">arrow_drop_down</span></a>
+                    </div>
+                    <div class="form-group">
+                        <a href="#">Цены: <span>Все цены</span></a>
+                    </div>
+                    <button class="form-submit-btn"><span class="material-symbols-outlined">search</span>Поиск машины</button>
+                </div>
+
+                <div class="header__browse">
+                    <p class="browse__text">ИЛИ ПОСМОТРИТЕ РЕКОМЕНДОВАННЫЕ МОДЕЛИ</p>
+                    <div class="browse__list">
+                        <a href="#" class="browse__item">
+                            <img src="src\icons\suv.svg" alt="SUV" class="browse__icon">
+                            <span class="browse__label">suv</span>
+                        </a>
+                        <a href="#" class="browse__item">
+                             <img src="src\icons\sedan.svg" alt="Sedan" class="browse__icon">
+                            <span class="browse__label">Sedan</span>
+                        </a>
+                        <a href="#" class="browse__item">
+                            <img src="src\icons\hatchback.svg" alt="Hatchback" class="browse__icon">
+                            <span class="browse__label">Hatchback</span>
+                        </a>
+                        <a href="#" class="browse__item">
+                            <img src="src\icons\coupe.svg" alt="Coupe" class="browse__icon">
+                            <span class="browse__label">Coupe</span>
+                        </a>
+                        <a href="#" class="browse__item">
+                            <img src="src\icons\hybrid.svg" alt="Hybrid" class="browse__icon">
+                            <span class="browse__label">Hybrid</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="main">
+        <section class="premium-brands">
+            <div class="premium-brands__container">
+                <div class="premium-brands__header">
+                    <h2 class="premium-brands__title">НАШИ ПРЕМИАЛЬНЫЕ БРЕНДЫ</h2>
+                    <a href="#" class="premium-brands__show-all">
+                        Посмотреть все бренды
+                        <span class="material-symbols-outlined">call_made</span>
+                    </a>
+                </div>
+
+                <div class="premium-brands__grid">
+                    <!-- Карточка бренда -->
+                    <a href="#" class="brand-card">
+                        <img src="src\icons\audi.png" alt="Audi" class="brand-card__logo">
+                        <span class="brand-card__name">Audi</span>
+                    </a>
+                    <!-- Карточка бренда -->
+                    <a href="#" class="brand-card">
+                        <img src="src\icons\bmw.png" alt="BMW" class="brand-card__logo">
+                        <span class="brand-card__name">BMW</span>
+                    </a>
+                    <!-- Карточка бренда -->
+                    <a href="#" class="brand-card">
+                        <img src="src\icons\ford.png" alt="Ford" class="brand-card__logo">
+                        <span class="brand-card__name">Ford</span>
+                    </a>
+                    <!-- Карточка бренда -->
+                    <a href="#" class="brand-card">
+                        <img src="src\icons\mercedes.png" alt="Mercedes Benz" class="brand-card__logo">
+                        <span class="brand-card__name">Mercedes Benz</span>
+                    </a>
+                    <!-- Карточка бренда -->
+                    <a href="#" class="brand-card">
+                        <img src="src\icons\peugeot.png" alt="Peugeot" class="brand-card__logo">
+                        <span class="brand-card__name">Peugeot</span>
+                    </a>
+                    <!-- Карточка бренда -->
+                    <a href="#" class="brand-card">
+                        <img src="src\icons\volkswagen.png" alt="Volkswagen" class="brand-card__logo">
+                        <span class="brand-card__name">Volkswagen</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="all-vehicles">
+            <div class="all-vehicles__container">
+                <div class="all-vehicles__header">
+                    <h2 class="all-vehicles__title">ВСЕ ТРАНСПОРТЫ</h2>
+                    <a href="#" class="all-vehicles__view-all">
+                        Посмотреть все
+                        <span class="material-symbols-outlined">call_made</span>
+                    </a>
+                </div>
+                <div class="all-vehicles__tabs">
+                    <a href="#" class="all-vehicles__tab active">В Наличии</a>
+                    <a href="#" class="all-vehicles__tab">Новые машины</a>
+                    <a href="#" class="all-vehicles__tab">Использованные машины</a>
+                </div>
+
+                <div class="all-vehicles__slider">
+                    <div class="all-vehicles__list">
+                        <!-- Карточка 1 -->
+                        <a href="#" class="vehicle-card">
+                            <div class="vehicle-card__image-wrapper">
+                                <img src="src\img\ford_transit.png" alt="Ford Transit" class="vehicle-card__image">
+                                <span class="vehicle-card__badge vehicle-card__badge--great-price">Отличная цена</span>
+                                <button type="button" class="vehicle-card__bookmark-btn" aria-label="Add to bookmarks">
+                                    <span class="material-symbols-outlined">bookmark</span>
+                                </button>
+                            </div>
+                            <div class="vehicle-card__content">
+                                <h3 class="vehicle-card__title">Ford Transit – 2021</h3>
+                                <p class="vehicle-card__description">4.0 D5 PowerPulse Momentum 5dr AW...</p>
+                                <ul class="vehicle-card__specs">
+                                    <li class="vehicle-card__spec"><span class="material-symbols-outlined">speed</span><span>2500 Miles</span></li>
+                                    <li class="vehicle-card__spec"><span class="material-symbols-outlined">local_gas_station</span><span>Diesel</span></li>
+                                    <li class="vehicle-card__spec"><span class="material-symbols-outlined">settings</span><span>Manual</span></li>
+                                </ul>
+                            </div>
+                            <div class="vehicle-card__footer">
+                                <span class="vehicle-card__price">$22,000</span>
+                                <span class="vehicle-card__details-link">Подробнее <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <!-- Карточка 2 -->
+                        <a href="#" class="vehicle-card">
+                            <div class="vehicle-card__image-wrapper">
+                                <img src="src\img\GLC.png" alt="New GLC" class="vehicle-card__image">
+                                <span class="vehicle-card__badge vehicle-card__badge--low-mileage">Малый пробег</span>
+                                    <button type="button" class="vehicle-card__bookmark-btn" aria-label="Add to bookmarks">
+                                    <span class="material-symbols-outlined">bookmark</span>
+                                </button>
+                            </div>
+                            <div class="vehicle-card__content">
+                                <h3 class="vehicle-card__title">New GLC – 2023</h3>
+                                <p class="vehicle-card__description">4.0 D5 PowerPulse Momentum 5dr AW...</p>
+                                <ul class="vehicle-card__specs">
+                                        <li class="vehicle-card__spec"><span class="material-symbols-outlined">speed</span><span>50 Miles</span></li>
+                                    <li class="vehicle-card__spec"><span class="material-symbols-outlined">local_gas_station</span><span>Petrol</span></li>
+                                    <li class="vehicle-card__spec"><span class="material-symbols-outlined">settings</span><span>Automatic</span></li>
+                                </ul>
+                            </div>
+                            <div class="vehicle-card__footer">
+                                <span class="vehicle-card__price">$95,000</span>
+                                <span class="vehicle-card__details-link">Подробнее <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <!-- Карточка 3 -->
+                        <a href="#" class="vehicle-card">
+                            <div class="vehicle-card__image-wrapper">
+                                <img src="src\img\Audi.png" alt="Audi A6" class="vehicle-card__image">
+                                    <button type="button" class="vehicle-card__bookmark-btn" aria-label="Add to bookmarks">
+                                    <span class="material-symbols-outlined">bookmark</span>
+                                </button>
+                            </div>
+                            <div class="vehicle-card__content">
+                                <h3 class="vehicle-card__title">Audi A6 3.5 – New</h3>
+                                <p class="vehicle-card__description">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <ul class="vehicle-card__specs">
+                                        <li class="vehicle-card__spec"><span class="material-symbols-outlined">speed</span><span>100 Miles</span></li>
+                                    <li class="vehicle-card__spec"><span class="material-symbols-outlined">local_gas_station</span><span>Petrol</span></li>
+                                    <li class="vehicle-card__spec"><span class="material-symbols-outlined">settings</span><span>Automatic</span></li>
+                                </ul>
+                            </div>
+                            <div class="vehicle-card__footer">
+                                <span class="vehicle-card__price">$58,000</span>
+                                <span class="vehicle-card__details-link">Подробнее <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                        <!-- Карточка 4 -->
+                        <a href="#" class="vehicle-card">
+                                <div class="vehicle-card__image-wrapper">
+                                <img src="src\img\Corolla.png" alt="Corolla Altis" class="vehicle-card__image">
+                                    <button type="button" class="vehicle-card__bookmark-btn" aria-label="Add to bookmarks">
+                                    <span class="material-symbols-outlined">bookmark</span>
+                                </button>
+                            </div>
+                            <div class="vehicle-card__content">
+                                <h3 class="vehicle-card__title">Corolla Altis – 2023</h3>
+                                <p class="vehicle-card__description">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <ul class="vehicle-card__specs">
+                                        <li class="vehicle-card__spec"><span class="material-symbols-outlined">speed</span><span>15000 Miles</span></li>
+                                    <li class="vehicle-card__spec"><span class="material-symbols-outlined">local_gas_station</span><span>Petrol</span></li>
+                                    <li class="vehicle-card__spec"><span class="material-symbols-outlined">settings</span><span>CVT</span></li>
+                                </ul>
+                            </div>
+                            <div class="vehicle-card__footer">
+                                <span class="vehicle-card__price">$45,000</span>
+                                <span class="vehicle-card__details-link">Подробнее <span class="material-symbols-outlined">arrow_forward</span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="all-vehicles__controls">
+                    <button class="slider-btn slider-btn--prev" aria-label="Previous vehicles">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button class="slider-btn slider-btn--next" aria-label="Next vehicles">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="sell-car-section">
+            <div class="sell-car-section__container">
+                <!-- Основной блок с призывом к действию -->
+                <div class="cta-block">
+                    <div class="cta-block__media">
+                        <img src="src\img\video.png" alt="A dark sedan on a scenic mountain road" class="cta-block__image">
+                        <button class="cta-block__play-btn" aria-label="Play video">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                        </button>
+                    </div>
+                    <div class="cta-block__content">
+                        <h2 class="cta-block__title">Получи справедливую цену<br>за свой автомобиль</h2>
+                        <p class="cta-block__description">Мы стремимся предоставлять нашим клиентам исключительный сервис, конкурентоспособные цены и широкий ассортимент товаров.</p>
+                        <ul class="cta-block__features">
+                            <li class="cta-block__feature">
+                                <span class="material-symbols-outlined">check</span>
+                                <span>Мы являемся крупнейшим поставщиком услуг в Великобритании, и у нас больше патрулей в большем количестве мест</span>
+                            </li>
+                            <li class="cta-block__feature">
+                                <span class="material-symbols-outlined">check</span>
+                                <span>Вы получаете круглосуточную помощь на дороге</span>
+                            </li>
+                            <li class="cta-block__feature">
+                                <span class="material-symbols-outlined">check</span>
+                                <span>Мы ремонтируем 4 из 5 машин на обочине</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="cta-block__button button">
+                            Начать
+                            <span class="material-symbols-outlined">call_made</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Блок со статистикой -->
+                <div class="stats-block">
+                    <div class="stats-block__item">
+                        <span class="stats-block__number">836M</span>
+                        <span class="stats-block__label">АВТОМОБИЛИ НА ПРОДАЖУ</span>
+                    </div>
+                    <div class="stats-block__item">
+                        <span class="stats-block__number">738M</span>
+                        <span class="stats-block__label">ОТЗЫВЫ ДИЛЕРОВ</span>
+                    </div>
+                    <div class="stats-block__item">
+                        <span class="stats-block__number">100M</span>
+                        <span class="stats-block__label">КОЛИЧЕСТВО ПОСЕТИТЕЛЕЙ В ДЕНЬ</span>
+                    </div>
+                    <div class="stats-block__item">
+                        <span class="stats-block__number">238M</span>
+                        <span class="stats-block__label">ПРОВЕРЕННЫЕ ДИЛЕРЫ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why-choose-us">
+            <div class="why-choose-us__container">
+                <h2 class="why-choose-us__title">Почему выбирают нас?</h2>
+                <div class="why-choose-us__grid">
+                    <!-- Элемент 1 -->
+                    <div class="feature-item">
+                        <img src="src\icons\icon1.png" alt="Financing Offers Icon" class="feature-item__icon">
+                        <h3 class="feature-item__title">Специальные финансовые предложения</h3>
+                        <p class="feature-item__description">Наш отдел финансов поможет вам найти финансовые решения, которые сэкономят ваши деньги.</p>
+                    </div>
+                    <!-- Элемент 2 -->
+                    <div class="feature-item">
+                        <img src="src\icons\icon2.png" alt="Trusted Dealership Icon" class="feature-item__icon">
+                        <h3 class="feature-item__title">Надежный автосалон</h3>
+                        <p class="feature-item__description">Наш отдел финансов поможет вам найти финансовые решения, которые сэкономят ваши деньги.</p>
+                    </div>
+                    <!-- Элемент 3 -->
+                    <div class="feature-item">
+                        <img src="src\icons\icon3.png" alt="Transparent Pricing Icon" class="feature-item__icon">
+                        <h3 class="feature-item__title">Прозрачное ценообразование</h3>
+                        <p class="feature-item__description">Наш отдел финансов поможет вам найти финансовые решения, которые сэкономят ваши деньги.</p>
+                    </div>
+                    <!-- Элемент 4 -->
+                    <div class="feature-item">
+                        <img src="src\icons\icon4.png" alt="Expert Car Service Icon" class="feature-item__icon">
+                        <h3 class="feature-item__title">Квалифицированный автосервис</h3>
+                        <p class="feature-item__description">Наш отдел финансов поможет вам найти финансовые решения, которые сэкономят ваши деньги.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest-posts">
+            <div class="latest-posts__container">
+                <div class="latest-posts__header">
+                    <h2 class="latest-posts__title">Последние записи в блоге</h2>
+                    <a href="#" class="latest-posts__view-all">
+                        Посмотреть все
+                        <span class="material-symbols-outlined">call_made</span>
+                    </a>
+                </div>
+
+                <div class="latest-posts__slider">
+                    <div class="latest-posts__list">
+                        <!-- Карточка 1 -->
+                        <a href="#" class="blog-card">
+                            <div class="blog-card__image-wrapper">
+                                <img src="src\img\blog1.png" alt="White SUV on a city overpass" class="blog-card__image">
+                                <span class="blog-card__category">Музыка</span>
+                            </div>
+                            <div class="blog-card__content">
+                                <div class="blog-card__meta">
+                                    <span>Admin</span>
+                                    <span>·</span>
+                                    <time datetime="2023-11-22">November 22, 2023</time>
+                                </div>
+                                <h3 class="blog-card__title">BMW ALPINA XB7 2024 года с эксклюзивными деталями, необыкновенный</h3>
+                            </div>
+                        </a>
+                        <!-- Карточка 2 -->
+                        <a href="#" class="blog-card">
+                            <div class="blog-card__image-wrapper">
+                                <img src="src\img\blog2.png" alt="Lime green Bentley SUV in a desert landscape" class="blog-card__image">
+                                <span class="blog-card__category">Аксессуары</span>
+                            </div>
+                            <div class="blog-card__content">
+                                <div class="blog-card__meta">
+                                    <span>Admin</span>
+                                    <span>·</span>
+                                    <time datetime="2023-11-22">22 ноября 2023 года</time>
+                                </div>
+                                <h3 class="blog-card__title">BMW X6 M50i создан для того, чтобы превзойти ваши самые смелые спортивные амбиции.</h3>
+                            </div>
+                        </a>
+                        <!-- Карточка 3 -->
+                        <a href="#" class="blog-card">
+                            <div class="blog-card__image-wrapper">
+                                <img src="src\img\blog3.png" alt="Brown sedan against a concrete wall" class="blog-card__image">
+                                <span class="blog-card__category">Внешний вид</span>
+                            </div>
+                            <div class="blog-card__content">
+                                <div class="blog-card__meta">
+                                <span>Admin</span>
+                                <span>·</span>
+                                <time datetime="2023-11-22">22 ноября 2023 года</time>
+                                </div>
+                                <h3 class="blog-card__title">Обзор BMW X5 Gold 2024 Sport: лёгкий на подъём</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Секция подписки -->
+            <section class="newsletter">
+                <div class="newsletter__text">
+                    <h2 class="newsletter__title">Присоеденяйся к BoxCar</h2>
+                    <p class="newsletter__description">Получайте информацию о ценах, советы по покупкам и многое другое!</p>
+                </div>
+                <form class="newsletter__form">
+                    <input type="email" placeholder="Введите ваш email" class="newsletter__input" required>
+                    <button type="submit" class="newsletter__button">Подписаться</button>
+                </form>
+            </section>
+
+            <!-- Разделитель -->
+            <hr class="footer__separator">
+
+            <!-- Основная часть футера -->
+            <div class="footer__main">
+                <div class="footer__about">
+                    <a href="#" class="footer__logo">BOXCARS</a>
+                    <p class="footer__about-text">Крупнейший и пользующийся наибольшим доверием автосалон в регионе. Мы предлагаем лучшие цены и широкий выбор автомобилей.</p>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Компания</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Поддержка</h4>
+                    <ul>
+                        <li><a href="#">Техническая поддержка</a></li>
+                        <li><a href="#">Условия обслуживания</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Следите за нами</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter (X)</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Нижняя часть футера -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 BoxCars. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
