@@ -288,7 +288,7 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(rgba(10, 20, 30, 0.6), rgba(10, 20, 30, 0.6)), url("/src/img/background.png");
+  background-image: linear-gradient(rgba(10, 20, 30, 0.6), rgba(10, 20, 30, 0.6)), url("../img/background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
